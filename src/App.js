@@ -2,6 +2,13 @@ import "./styles.css";
 import React, { Suspense, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls, ContactShadows } from "@react-three/drei";
+import {
+  Selection,
+  EffectComposer,
+  Outline,
+} from "@react-three/postprocessing";
+import { useControls } from "leva";
+
 import { proxy, useSnapshot } from "valtio";
 
 import Model from "./Model";
