@@ -83,7 +83,7 @@ export default function App() {
             handlePointerMissed={handlePointerMissed}
             color={snap}
           />
-          <OrbitControls target={[0, 150, 0]} />
+          <OrbitControls target={[0, 150, 0]} maxDistance={800} />
           <Environment preset="sunset" />
           <ContactShadows
             opacity={0.5}
