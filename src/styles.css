@@ -1,0 +1,59 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(211, 234, 252);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.picker {
+  position: absolute !important;
+  top: 200px;
+  right: 200px;
+  width: 200px !important;
+  height: 200px !important;
+  z-index: 1;
+}
+
+.pickertxt {
+  position: absolute !important;
+  top: 400px;
+  right: 200px;
+  z-index: 1;
+  border: 1px solid rgb(6, 0, 57);
+  border-radius: 50px;
+  padding: 5px 100px 5px 10px;
+}
+
+.heading {
+  position: absolute !important;
+  z-index: 1;
+  border: 1px solid rgb(6, 0, 57);
+  border-radius: 50px;
+  background-color: rgb(6, 0, 57);
+  padding: 5px 50px 5px 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+}
+
+.heading2 {
+  position: absolute !important;
+  z-index: 1;
+  border: 1px solid rgb(6, 0, 57);
+  border-radius: 50px;
+  padding: 5px 50px 5px 50px;
+  margin-top: 20px;
+  margin-left: 210px;
+  color: rgb(6, 0, 57);
+  font-weight: 50;
+  font-style: normal;
+}
