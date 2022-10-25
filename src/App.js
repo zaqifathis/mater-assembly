@@ -2,14 +2,13 @@ import "./styles.css";
 import React, { Suspense, useState, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls, ContactShadows } from "@react-three/drei";
+import { proxy, useSnapshot } from "valtio";
+import { useControls } from "leva";
 import {
-  Selection,
   EffectComposer,
+  Selection,
   Outline,
 } from "@react-three/postprocessing";
-import { useControls } from "leva";
-
-import { proxy, useSnapshot } from "valtio";
 
 import Model from "./Model";
 import Picker from "./Picker";
@@ -30,7 +29,6 @@ const state = proxy({
 
 export default function App() {
   const snap = useSnapshot(state);
-
   const [hovered, setHovered] = useState(null);
 
   useEffect(() => {
@@ -83,14 +81,21 @@ export default function App() {
           position={[300, 1500, 800]}
         />
         <Suspense fallback={null}>
-          <Model
-            handleClick={handleClick}
-            handlePointerOver={handlePointerOver}
-            handlePointerOut={handlePointerOut}
-            handlePointerMissed={handlePointerMissed}
-            color={snap}
+          <Selection>
+            <Model
+              handleClick={handleClick}
+              handlePointerOver={handlePointerOver}
+              handlePointerOut={handlePointerOut}
+              handlePointerMissed={handlePointerMissed}
+              color={snap}
+            />
+          </Selection>
+
+          <OrbitControls
+            target={[0, 150, 0]}
+            maxDistance={800}
+            enablePan={false}
           />
-          <OrbitControls target={[0, 150, 0]} maxDistance={800} />
           <Environment preset="sunset" />
           <ContactShadows
             opacity={0.5}
