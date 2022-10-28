@@ -7,7 +7,7 @@ export default function Picker({ current, colour, handleColorChange }) {
       <HexColorPicker
         className="picker"
         color={colour}
-        onChange={(event, color) => handleColorChange(event, color)}
+        onChange={(event) => handleColorChange(event)}
       />
       <h2 className="pickertxt">{current}</h2>
     </div>

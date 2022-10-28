@@ -9,7 +9,6 @@ import Model from "./Model";
 import Picker from "./Picker";
 
 const items = {};
-const outlines = {};
 for (let i = 0; i < 58; i++) {
   if (i < 1) {
     items[`strip${i}`] = "#FF0000";
@@ -34,7 +33,7 @@ export default function App() {
       max: 57,
       step: 1,
     },
-    color: "#0208ff",
+    color: "#3135ff",
   });
 
   useEffect(() => {
@@ -50,10 +49,6 @@ export default function App() {
         )}'), auto`);
     }
   }, [hovered]);
-
-  useEffect(() => {
-    console.log(`update enable to: ${enable}`);
-  }, [enable]);
 
   const handleClick = (event) => {
     event.stopPropagation();
@@ -97,6 +92,9 @@ export default function App() {
             handlePointerOut={handlePointerOut}
             handlePointerMissed={handlePointerMissed}
             color={snap}
+            highlight={enable}
+            selectedStrip={strip}
+            selectedColor={color}
           />
           <OrbitControls
             target={[0, 150, 0]}
