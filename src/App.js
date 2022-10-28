@@ -98,7 +98,7 @@ export default function App() {
           />
           <OrbitControls
             target={[0, 150, 0]}
-            maxDistance={800}
+            maxDistance={1200}
             enablePan={false}
           />
           <Environment preset="sunset" />
