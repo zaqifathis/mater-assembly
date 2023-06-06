@@ -75,8 +75,8 @@ export default function App() {
   return (
     <div className="App">
       <h2 className="heading">Mater</h2>
-      <h2 className="heading2">blob assembly</h2>
-      <Canvas camera={{ position: [0, 200, 800], fov: 45 }}>
+      <h2 className="heading2">Stream configurator</h2>
+      <Canvas camera={{ position: [0, 200, 600], fov: 45 }}>
         <ambientLight castShadow intensity={0.1} />
         <spotLight
           castShadow
