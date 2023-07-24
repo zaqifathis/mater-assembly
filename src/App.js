@@ -100,7 +100,7 @@ export default function App() {
             maxDistance={900}
             enablePan={true}
           />
-          <Environment files="./img/venice_sunset_1k.hdr" />
+          <Environment preset="sunset" />
           <ContactShadows
             opacity={0.5}
             position={(0, 0, 0)}
