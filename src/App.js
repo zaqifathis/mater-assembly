@@ -74,9 +74,8 @@ export default function App() {
 
   return (
     <div className="App">
-      <h2 className="heading">Mater</h2>
-      <h2 className="heading2">Stream configurator</h2>
-      <Canvas camera={{ position: [0, 200, 600], fov: 45 }}>
+      <h2 className="heading">La Fleur Mathématique</h2>
+      <Canvas camera={{ position: [200, 200, 600], fov: 45 }}>
         <ambientLight castShadow intensity={0.1} />
         <spotLight
           castShadow
@@ -87,11 +86,11 @@ export default function App() {
         />
         <Suspense fallback={null}>
           <Model
-            handleClick={handleClick}
-            handlePointerOver={handlePointerOver}
-            handlePointerOut={handlePointerOut}
-            handlePointerMissed={handlePointerMissed}
-            color={snap}
+            // handleClick={handleClick}
+            // handlePointerOver={handlePointerOver}
+            // handlePointerOut={handlePointerOut}
+            // handlePointerMissed={handlePointerMissed}
+            // color={snap}
             highlight={enable}
             selectedStrip={strip}
             selectedColor={color}
@@ -99,7 +98,7 @@ export default function App() {
           <OrbitControls
             target={[0, 150, 0]}
             maxDistance={900}
-            enablePan={false}
+            enablePan={true}
           />
           <Environment files="./img/venice_sunset_1k.hdr" />
           <ContactShadows
