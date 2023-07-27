@@ -15,7 +15,7 @@ export default function Model({
   selectedStrip,
   selectedColor,
 }) {
-  const { nodes, materials } = useGLTF("/ambs.glb");
+  const { nodes, materials } = useGLTF("/mater_newBlob.glb");
 
   const highlightedStrip = (
     highlight,
@@ -51,35 +51,439 @@ export default function Model({
       onPointerMissed={() => handlePointerMissed()}
       onClick={(event) => handleClick(event)}
     >
-      <mesh         
-        name="diag1"
+      <mesh
+        name="base"
         castShadow
         receiveShadow
-        geometry={nodes.diag1.geometry} 
-        material={materials['diffuse_0.001']} />
-      <mesh 
-        name="diag1"
+        geometry={nodes.base.geometry}
+        material={materials.diffuse_0}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip0"
         castShadow
         receiveShadow
-        geometry={nodes.diag2.geometry} 
-        material={materials['diffuse_0.001']} />
-      <mesh 
-        name="diag1"
+        geometry={nodes.strip0.geometry}
+        material={materials.strip0}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip0",
+          color.items.strip0
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip1"
         castShadow
         receiveShadow
-        geometry={nodes.horizontal.geometry} 
-        material={materials['diffuse_0.001']} />
-      <mesh 
-      name="diag1"
-      castShadow
-      receiveShadow
-      geometry={nodes.vertical.geometry} 
-      material={materials['diffuse_0.001']} />
+        geometry={nodes.strip1.geometry}
+        material={materials.strip1}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip1",
+          color.items.strip1
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip2"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip2.geometry}
+        material={materials.strip2}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip2",
+          color.items.strip2
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip3"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip3.geometry}
+        material={materials.strip3}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip3",
+          color.items.strip3
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip4"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip4.geometry}
+        material={materials.strip4}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip4",
+          color.items.strip4
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip4"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip4.geometry}
+        material={materials.strip4}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip4",
+          color.items.strip4
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip5"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip5.geometry}
+        material={materials.strip5}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip5",
+          color.items.strip5
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip6"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip6.geometry}
+        material={materials.strip6}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip6",
+          color.items.strip6
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip7"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip7.geometry}
+        material={materials.strip7}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip7",
+          color.items.strip7
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip8"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip8.geometry}
+        material={materials.strip8}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip8",
+          color.items.strip8
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip9"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip9.geometry}
+        material={materials.strip9}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip9",
+          color.items.strip9
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip10"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip10.geometry}
+        material={materials.strip10}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip10",
+          color.items.strip10
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip11"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip11.geometry}
+        material={materials.strip11}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip11",
+          color.items.strip11
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip12"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip12.geometry}
+        material={materials.strip12}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip12",
+          color.items.strip12
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip13"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip13.geometry}
+        material={materials.strip13}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip13",
+          color.items.strip13
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip14"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip14.geometry}
+        material={materials.strip14}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip14",
+          color.items.strip14
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip15"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip15.geometry}
+        material={materials.strip15}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip15",
+          color.items.strip15
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip16"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip16.geometry}
+        material={materials.strip16}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip16",
+          color.items.strip16
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip17"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip17.geometry}
+        material={materials.strip17}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip17",
+          color.items.strip17
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip18"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip18.geometry}
+        material={materials.strip18}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip18",
+          color.items.strip18
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip19"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip19.geometry}
+        material={materials.strip19}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip19",
+          color.items.strip19
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip20"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip20.geometry}
+        material={materials.strip20}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip20",
+          color.items.strip20
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip21"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip21.geometry}
+        material={materials.strip21}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip21",
+          color.items.strip21
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip22"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip22.geometry}
+        material={materials.strip22}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip22",
+          color.items.strip22
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip23"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip23.geometry}
+        material={materials.strip23}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip23",
+          color.items.strip23
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip24"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip24.geometry}
+        material={materials.strip24}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip24",
+          color.items.strip24
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip25"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip25.geometry}
+        material={materials.strip25}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip25",
+          color.items.strip25
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
+      <mesh
+        name="strip26"
+        castShadow
+        receiveShadow
+        geometry={nodes.strip26.geometry}
+        material={materials.strip26}
+        material-color={highlightedStrip(
+          highlight,
+          selectedStrip,
+          selectedColor,
+          "strip26",
+          color.items.strip26
+        )}
+        //rotation={[Math.PI / 2, 0, 10]}
+      />
     </group>
   );
 }
 
-useGLTF.preload("/ambs.glb");
+useGLTF.preload("/mater_newBlob.glb");
 
 // return (
 //   <group
